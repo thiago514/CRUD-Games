@@ -1,7 +1,6 @@
 package br.com.gamesProject.CRUDGames.entities;
 
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -40,7 +39,9 @@ public class Game {
 	
 	private String imgUrl;
 	
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
 	
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 }
